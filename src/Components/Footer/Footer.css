@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Righteous', cursive;
+}
+
+.footer-name {
+  color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,275 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+/* /Just the background stuff/ */
+span.s1 {
+  position: absolute;
+  top: 0;
+  font-size: 15rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #3C4447;
+  z-index: -1;
+}
+
+span.s2 {
+  font-weight: 800;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 15rem;
+  text-transform: uppercase;
+  color: #3C4447;
+}
+
+body {
+  background-color: #353B3F;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* The card */
+.book-card {
+  position: relative;
+  height: 450px;
+  width: 900px;
+  margin: 200px auto;
+  background-color: #FFF;
+  box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Image on the left side */
+.thumbnail {
+  float: left;
+  position: relative;
+  left: 30px;
+  top: -30px;
+  height: 320px;
+  width: 530px;
+  box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  /* overflow: hidden; */
+}
+
+img.left {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+/* Right side of the card */
+.title-right {
+  margin-left: 590px;
+  margin-right: 20px;
+}
+
+.book-title {
+  padding-top: 15px;
+  font-size: 1.3rem;
+  color: #4B4B4B;
+}
+
+.book-author {
+  background-color: #0061d6;
+  height: 30px;
+  width: 100%;
+  border-radius: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.book-author>span {
+  padding-top: 5px;
+  margin-left: 10px;
+  float: left;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.author-name {
+  padding-top: 2px;
+  /* margin-right: 37px; */
+  font-size: 0.8rem;
+  color: white;
+  margin-left: 11px;
+}
+
+.separator {
+  margin-top: 10px;
+  border: 1px solid #C3C3C3;
+}
+
+.book-desc {
+  text-align: justify;
+  padding-top: 10px;
+  font-size: 0.95rem;
+  line-height: 150%;
+  color: #4B4B4B;
+  max-height: 170px;
+}
+
+/* book pages*/
+.release-date {
+  position: absolute;
+  left: 30px;
+  top: 109px;
+  font-size: 6rem;
+  color: #f40c0ca8;
+}
+
+.release-month {
+  position: absolute;
+  left: 35px;
+  font-size: 2rem;
+  color: #f40c0ca8;
+  top: 302px;
+}
+
+.book-price {
+  position: absolute;
+  left: 15rem;
+  bottom: 1rem;
+  font-size: 2rem;
+  color: #000000;
+  font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* some buttons */
+ul {
+  margin-left: 250px;
+}
+
+li {
+  display: inline;
+  list-style: none;
+  padding-right: 40px;
+  color: #7B7B7B;
+}
+
+.fab {
+  position: absolute;
+  right: 50px;
+  bottom: -40px;
+  box-sizing: border-box;
+  padding-top: 18px;
+  background-color: #1875D0;
+  width: 80px;
+  height: 80px;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+}
+
+.book-preview {
+  padding: 0.6em 1em;
+  border: 4px solid #f40c0ca8;
+  ;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  background-color: transparent;
+  color: #f40c0ca8;
+  ;
+  font-weight: bolder;
+  font-size: 16px;
+  margin-left: 74px;
+  cursor: pointer;
+}
+
+.book-preview:hover {
+  -webkit-transform: scale(1.2) rotate(10deg);
+  -ms-transform: scale(1.2) rotate(10deg);
+  transform: scale(1.2) rotate(10deg);
+  background-color: #f40c0ca8;
+  ;
+  color: white;
+}
+
+.isEbook {
+  font-weight: 900;
+}
+
+/* Media Query */
+
+@media(max-width: 928px) {
+  .book-preview {
+    font-size: 12px;
+  }
+
+  .book-card {
+    position: relative;
+    height: 450px;
+    width: 874px;
+  }
+}
+
+@media (max-width: 900px) {
+  .title-right {
+    margin-left: 433px;
+    margin-right: 20px;
+  }
+
+  .thumbnail {
+    width: 351px;
+  }
+
+  .book-card {
+    position: relative;
+    height: 490px;
+    width: 715px;
+  }
+
+  .book-price {
+    position: absolute;
+    left: 10rem;
+  }
+}
+
+@media (max-width: 752px) {
+  .thumbnail {
+    width: 129px;
+    height: 200px;
+  }
+
+  .title-right {
+    margin-left: 178px;
+    margin-right: 20px;
+  }
+
+  .book-card {
+    position: relative;
+    height: 490px;
+    width: 586px;
+  }
+
+  .book-desc {
+    max-height: 97px;
+  }
+}
+
+@media (max-width: 614px) {
+  .book-card {
+    position: relative;
+    height: 490px;
+    width: 464px;
+  }
+
+  .release-date {
+    font-size: 39px;
+  }
+
+  .release-month {
+    position: absolute;
+    left: 23px;
+    font-size: 2rem;
+    color: #f40c0ca8;
+    top: 147px;
+  }
+}

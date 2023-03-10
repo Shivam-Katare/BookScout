@@ -1,0 +1,24 @@
+.join-me-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 7px;
+    position: absolute;
+    font-size: 27px;
+    left: 14px;
+}
+
+@media (max-width: 377px) {
+    .join-me-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 7px;
+        position: absolute;
+        font-size: 27px;
+        left: 14px;
+        top: 313px;
+    }
+}

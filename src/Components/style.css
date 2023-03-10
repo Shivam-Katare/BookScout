@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Josefin+Sans:wght@100;300&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  position: relative;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #403e3e;
+  --nav-color: #f4f1f1;
+  --search-bar-color: #f4f1f1;
+  --result-card-color: #efefef;
+  --loader-bg:#f6f6f6;
+}
+
+.dark-theme {
+  --primary-color: #323339;
+  --secondary-color: #fcf4f4;
+  --nav-color: #26272b;
+  --search-bar-color: #3e4046;
+  --result-card-color: #3e3f47;
+  --loader-bg:#333;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: #e3e2e9;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c8c6d2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a19fad;
+}
