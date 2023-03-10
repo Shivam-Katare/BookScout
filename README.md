@@ -3,10 +3,14 @@
 This is a React app that allows you to search for books using the Google Books API. Once you enter a book title, the app will fetch the top 20 results and display information about each book, including the number of pages, whether it's available as an eBook, the price, description, and buy links.
 
 ## Preview
-Will add soon
+
+
+https://user-images.githubusercontent.com/91705825/224305651-9657a023-04ce-4388-9ca0-439b0ac51bde.mp4
+
+
 ## Demo
 
-You can try out a live demo of the app here: [Will add soon]
+You can try out a live demo of the app here: https://book-scout.vercel.app/
 
 ## Getting Started
 
@@ -38,7 +42,3 @@ Follow me on
  - [ShowwCase](https://www.showwcase.com/shivam-katare) 
 
 to stay up to date on my latest projects!
-
-## Screenshots
-
-Will add soon.
